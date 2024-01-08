@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Weather App</title>
+</head>
+<body>
+    
+        <div class="container">
+            <div class="search-box">
+                <i class='bx bxs-map'></i>
+                <input type="text" placeholder="location">
+                <button class="bx bx-search"></button>
+            </div>
+
+            <div class="weather-box">
+                <div class="weather">
+                    <img src="">
+                        <p class="temperature">0<span> °C</span></p>
+                        <p class="description">Broken Clouds</p>
+                </div>
+            </div>
+            <div class="weatherDetails">
+                <div class="details" id="displayLocalTime">
+                    <h3>Local Time</h3>
+                    <p class="localTime"></p>
+                </div>
+                <div class="details" id="displayWindDetails">
+                    <h3>Wind Speed</h3>
+                    <p class="windDetails"></p>
+                </div>
+                <div class="details" id="displayCloudiness">
+                    <h3>Cloudiness</h3>
+                    <p class="cloudiness"></p>
+                </div>
+                <div class="details" id="displayPressure">
+                    <h3>Pressure</h3>
+                    <p class="pressure"></p>
+                </div>
+                <div class="details" id="displayHumidity">
+                    <h3>Humidity</h3>
+                    <p class="humidity"></p>
+                </div>
+                <div class="details" id="displaySunrise">
+                    <h3>Sunrise</h3>
+                    <p class="sunrise"></p>
+                </div>
+                <div class="details" id="displaysSunset">
+                    <h3>Sunset</h3>
+                    <p class="sunset"></p>
+                </div>
+                <div class="details" id="displayGeoCoords">
+                    <h3>Geo Coords</h3>
+                    <div class="coords">
+                        <p class="geoCoordsLon"></p>
+                        <p class="geoCoordsLat"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(47, 255, 147);
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    background: purple;
+    border-radius: 16px;
+    color: white;
+    padding: 20px;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box i {
+    position: absolute;
+    left: 10px;
+    font-size: 28px;
+}
+
+.search-box input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    border-radius: 10px;
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 48px 0 42px;
+}
+
+.search-box input::placeholder {
+    color: white;
+    text-transform: capitalize;
+}
+
+.search-box button {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: white;
+    padding: 0 40px 0 5px;
+    cursor: pointer;
+}
+
+.weather-box {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.weather-box img {
+    width: 20%;
+}
+
+.weather-box .temperature {
+    position: relative;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.weather-box .temperature span {
+    position: absolute;
+    font-size: 24px;
+    margin-left: 4px;
+}
+
+.weather-box .description {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weatherDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coords {
+    display: flex;
+    gap: 10px;
+}
