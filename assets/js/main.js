@@ -26,16 +26,17 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metri
         const sunset = document.querySelector(".sunset")
         const geoCoordsLon = document.querySelector(".geoCoordsLon")
         const geoCoordsLat = document.querySelector(".geoCoordsLat")
-
         
-        const localTimezoneOffset = `${data.timezone}`;
+        const localTimezoneOffset = `${data.timezone}`
         const LocalTimeLive = () => {
             const currentTimeUTC = new Date().toUTCString()
+            console.log(currentTimeUTC);
             const currentTime = new Date(new Date(currentTimeUTC).getTime() + localTimezoneOffset * 1000).toLocaleTimeString();
-            localTimeOutput.textContent = `Local Time: ${currentTime}`;
+            console.log(currentTime);
+            localTimeOutput.textContent = currentTime
         };
-        LocalTimeLive();
-        setInterval(LocalTimeLive, 1000);
+        LocalTimeLive()
+        setInterval(LocalTimeLive, 1000)
 
         weatherIcon.setAttribute("src", icon)
         temperature.textContent = `${(data.main.temp).toFixed(1)}°C`

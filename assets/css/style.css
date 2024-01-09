@@ -11,16 +11,17 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: rgb(47, 255, 147);
+    background: rgba(49, 138, 217, 0.844);
 }
 
 .container {
     position: relative;
     width: 400px;
-    background: purple;
+    background: transparent;
     border-radius: 16px;
     color: white;
     padding: 20px;
+    border: 2px solid rgba(255, 255, 255, .2);
 }
 
 .search-box {
