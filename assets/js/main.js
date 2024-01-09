@@ -30,9 +30,9 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metri
         const localTimezoneOffset = `${data.timezone}`
         const LocalTimeLive = () => {
             const currentTimeUTC = new Date().toUTCString()
-            console.log(currentTimeUTC);
+            // console.log(currentTimeUTC);
             const currentTime = new Date(new Date(currentTimeUTC).getTime() + localTimezoneOffset * 1000).toLocaleTimeString();
-            console.log(currentTime);
+            // console.log(currentTime);
             localTimeOutput.textContent = currentTime
         };
         LocalTimeLive()
